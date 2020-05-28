@@ -19,6 +19,6 @@ class ImageProcessor(object):
 
 
 ip = ImageProcessor()
-img = ip.load("colorfull.png")
+img = ip.load("../elon.png")
 print(img)
 ip.display(img)

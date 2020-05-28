@@ -1,6 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 
 
 class ScrapBooker(object):
@@ -38,11 +36,9 @@ def char_range(c1, c2):
         yield chr(c)
 
 
-# finarr = []
 sb = ScrapBooker()
 
 
-path = "colorfull.png"
 finarr = []
 arr = list("ABCD")
 for x in arr:
@@ -54,16 +50,14 @@ print(img)
 print("crop")
 cr = sb.crop(img, (img.shape[0]//2, img.shape[1]//2), (0, 0))
 print(cr)
-# ip.display(cr)
+
 print("jux")
 ju = sb.juxtapose(img, 2, 0)
 print(ju)
-# ip.display(ju)
 
 print("mosaic")
 mo = sb.mosaic(img, (1, 2))
 print(mo)
-# ip.display(mo)
 
 print("thin")
 mo = sb.thin(img, 3, 0)
